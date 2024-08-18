@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Maths Game</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+       <style>
+      
+
+       body {
+        background-image: url('mathgame_bg1.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%; /* Stretches the image to cover the whole element */
+        background-position: center; /* Centers the image within the element */
+        min-height: 100vh;
+        margin:0;
+        }
+       
+       body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+button {
+    background: transparent;
+    border: 0;
+    font-weight: bold;
+    color:rgb(2, 2, 2);
+    
+    font-size: 60px;
+    padding: 10px;
+    position: absolute;
+}
+
+#add {
+    top: 29%;
+    left: 27%;
+}
+
+#sub {
+    top: 28%;
+    right: 29%;
+}
+
+#multi {
+    bottom: 24%;
+    left: 28%;
+}
+
+#divide {
+    bottom: 23%;
+    right: 29%;
+}
+
+
+     
+
+
+       </style>
+        
+
+    </head>
+    <body>
+
+
+    <div id="home">
+        <!-- <img src="mathgame_bg1.png" > -->
+        <button id="add">+</button>
+        <button id="sub">-</button>
+        <button id="multi">x</button>
+        <button id="divide">÷</button>
+    </div>
+
+    <script>
+        
+        // Navigation buttons logic
+        const addition = document.getElementById("add");
+        const subtraction = document.getElementById("sub");
+        const multiply = document.getElementById("multi");
+        const division = document.getElementById("divide");
+
+        addition.addEventListener("click", function(){
+            window.location.href = 'index_add.html';
+        });
+
+        subtraction.addEventListener("click", function(){
+            window.location.href = 'index_sub.html';
+        });
+
+        multiply.addEventListener("click", function(){
+            window.location.href = 'index_x.html';
+        });
+
+        division.addEventListener("click", function(){
+            window.location.href = 'index_divide.html';
+        });
+    </script>
+</body>
+</html>
